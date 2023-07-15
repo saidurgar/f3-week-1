@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    position: relative;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 17%;
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    gap:40px;
+    background-color: #0C0E10;
+    color:white
+}
+
+
+.sidebar .chef{
+    width: 100%;
+    display: flex;
+    flex-flow:column wrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .chef img{
+    width: 100%;
+}
+
+
+.quicklinks{
+    width: 100%;
+    display: flex;
+    flex-flow:column wrap ;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.moreaboutus{
+    width: 100%;
+    display: flex;
+    flex-flow:column wrap ;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+ol li {
+    width: 130px;
+ }
+.menu{
+    position: absolute;
+    left:230px;
+    min-height: 100vh;
+    /* width: 100vw; */
+    width: 82%;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 1050px;
+    height: 50px;
+    background-color: #111315;
+    z-index: 1000;
+    /* padding: 0 20px; */
+    
+}
+
+nav .left{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:600px;
+    /* border: 2px solid red; */
+    background-color: transparent;
+}
+
+.left input{
+    width: 94%;
+    height: 45px;
+    padding: 0 30px;
+    background-color: #272A30;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    cursor: 2px solid;
+    font-weight: 800;
+    color: aliceblue;
+
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top:14px;
+    left:5px;
+}
+
+nav .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
+    /* border: 2px solid green; */
+    gap:35px;
+}
+
+nav .right .signup{
+    width: 100px;
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(245, 245, 245);
+    height: 40px;
+}
+
+nav .right .login{
+    width: 100px;
+    background-color: red;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+    height: 40px;
+}
+
+nav .right .profile{
+    width: 60px;
+    /* background-color: red; */
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: wheat;
+    height: 45px;
+}
+
+nav .right .profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#main-menu{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    min-height: 120vh;
+    background-color: yellow;
+    padding: 0 10px;
+    overflow-x:hidden;
+    background-color: #111315;
+    
+}
+
+#main-menu .top{
+    position: relative;
+    top:65px;
+    /* display: none; */
+}
+
+#main-menu .top img{
+    width: 98%;
+    height: 100%;
+    
+}
+
+#main-menu .bottom{
+    position: relative;
+    top:100px;
+    display: flex;
+    flex-flow: column wrap;
+    gap:20px;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap:50px;
+}
+
+.cards .item{
+   width: 300px;
+   height: 250px;
+   display: flex;
+   flex-flow: column wrap;
+   color: white;
+   background-color: #191D20;
+}
+
+.cards .item .image{
+   width: 300px;
+   height: 200px;
+}
+
+.cards .item .desc{
+     width: 280px;
+     height: 50px;
+     padding: 0 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    
+}
+
+.item .desc .right{
+    background-color: #272A30;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.cards .item .image img{
+   width: 300px;
+   height: 200;
+} 
+
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        left:0;
+        overflow-x: hidden;
+    }
+    nav{
+       position: fixed;
+       left:0;
+       width: 100%;
+       height: 50px;
+       display: flex;
+       align-content: center;
+       justify-content: center;
+       gap:10px;
+
+    }
+    nav .left{
+        width: 430px;
+    }
+    nav .right{
+        width: 300px;
+    }
+
+    nav .right .signup{
+        width: 80px;
+    }
+    nav .right .login{
+        width: 80px;
+    }
+    nav .right .profile{
+        width: 40px;
+    }
+    #main-menu{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:50px;
+    }
+}
+
+@media (max-width: 1000px){
+    nav .left{
+        width: 600px;
+    }
+    .cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:100px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .sidebar{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        left:0;
+        overflow-x: hidden;
+    }
+    nav{
+       position: fixed;
+       left:0;
+       width: 100%;
+       height: 50px;
+       display: flex;
+       align-content: center;
+       justify-content: center;
+       gap:10px;
+
+    }
+    nav .left{
+        width: 1000px;
+    }
+    nav .right{
+        width: 300px;
+    }
+
+    nav .right .signup{
+        width: 80px;
+    }
+    nav .right .login{
+        width: 80px;
+    }
+    nav .right .profile{
+        width: 40px;
+    }
+    #main-menu{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:50px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:50px;
+    }   
+}
+
+@media screen and (max-width: 400px){
+    .sidebar{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        left:0;
+        overflow-x: hidden;
+    }
+    nav{
+       position: fixed;
+       left:0;
+       width: 100%;
+       height: 50px;
+       display: flex;
+       align-content: center;
+       justify-content: center;
+       gap:10px;
+
+    }
+    nav .left{
+        width: 600px;
+    }
+    nav .right{
+        width: 300px;
+    }
+
+    nav .right .signup{
+        /* width: 80px; */
+        display: none;
+    }
+    nav .right .login{
+        /* width: 80px; */
+        display: none;
+    }
+    nav .right .profile{
+        width: 40px;
+    }
+    #main-menu{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap:50px;
+    }
+}
